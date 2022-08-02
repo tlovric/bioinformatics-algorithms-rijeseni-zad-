@@ -1,3 +1,4 @@
+#Compute a Number of Times a Pattern Appears in a Text
 def patterncount(text, pattern):
     br = 0
     for i in range(0, (len(text) - len(pattern))+1):
