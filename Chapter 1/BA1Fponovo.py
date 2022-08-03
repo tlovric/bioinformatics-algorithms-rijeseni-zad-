@@ -1,3 +1,4 @@
+#Find a Position in a Genome Minimizing the Skew
 def Minimize(text):
     lista=[0]
     for i in range(0,len(text)):
