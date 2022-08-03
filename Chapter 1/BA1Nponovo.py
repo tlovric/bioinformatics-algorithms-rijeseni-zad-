@@ -1,3 +1,4 @@
+#Generate the d-Neighborhood of a String
 from itertools import product
 
 def hamming_distance(p, q):
@@ -19,6 +20,7 @@ def Neighbours(text,k):
                 lista.append(kmer)
     for i in range(0,len(lista)):
         print (lista[i])
+        
 if __name__ == "__main__":
     text="ACG"
     k=1
