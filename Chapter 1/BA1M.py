@@ -1,3 +1,4 @@
+#Implement NumberToPattern
 def NumberToPattern(number, k):
     rez = ""
     D = {0: "A", 1: "C", 2: "G", 3: "T"}
