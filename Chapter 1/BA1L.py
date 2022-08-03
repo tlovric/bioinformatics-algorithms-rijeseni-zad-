@@ -1,3 +1,4 @@
+#Implement PatternToNumber
 def PatternToNumber(pattern):
     rez = 0
     if (pattern == "A"):
