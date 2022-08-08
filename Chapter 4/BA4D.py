@@ -3,7 +3,7 @@ def get_all_combinations(mass, aa_masses, counter):
     if (mass in counter):
         return counter[mass]
 
-    if mass < 0:  # znaci
+    if mass < 0:  
         return 0
 
     if mass == 0:
@@ -42,7 +42,7 @@ def GivenMassProblem(mass):
 
     counter = {}
     aa_masses=set(amino_acid_mass.values())
-    return get_all_combinations(mass, aa_masses, counter)  # pazi,ovde ide set jer dva imaju isto
+    return get_all_combinations(mass, aa_masses, counter)  
 
 if __name__ == "__main__":
     inlines = int(input())
