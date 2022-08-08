@@ -32,7 +32,7 @@ def TheoreticalSpectrum(peptide):
 
     res.append(0)
     res.append(sum([mass[x] for x in peptide]))
-
+#map svaki el iz res pribaci u string
     return map(str, sorted(res))
 
 if __name__ == "__main__":
