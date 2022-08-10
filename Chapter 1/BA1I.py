@@ -16,14 +16,17 @@ def all_kmers(k):
     return kmers
 
 def ListofFrequentwordswithmismatches(text, k, d1, D):
-    d = dict()
-    for i in D:
-        br = 0
-        for j in range(0, len(text) - k+1):
-            if (hamming_distance(i, text[j:j + k]) <= d1):
-                br = br + 1
-        d[i] = br
-    return d
+   lista = dict()
+    kmers = all_kmers(k)
+
+    for kmer in kmers:
+        for i in range(len(text) - k + 1):
+            if hamming_distance(text[i:i + k], kmer) <= d1:
+                if kmer not in lista:
+                    lista[kmer] = 1
+                else:
+                    lista[kmer] += 1
+    return lista
 
 if __name__ == "__main__":
     text = input("Unesi text: ")
